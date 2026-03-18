@@ -10,6 +10,9 @@ const getPokemons = async (limit = 20, offset = 0):Promise<SimplePokemons[]> => 
     name: pokemon.name,
   }))
 
+  //? Error de pagina forzado
+  // throw new Error('Esto es un error que no deberia de suceder')
+
   return pokemons
 
 }
